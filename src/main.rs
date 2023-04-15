@@ -1,6 +1,3 @@
-
-// https://www.freecodecamp.org/news/how-to-build-a-to-do-app-with-rust/
-
 use std::env::args;
 use std::collections::HashMap;
 use std::io::Read;
@@ -61,7 +58,7 @@ impl ToDo {
     fn complete(&mut self, key: &String) -> Option<()> {
 
         let status_complete = Status { active: false, status: "Completed".to_string()};
-        
+
         match self.map.get_mut(key) {
             Some(v) => Some( *v = status_complete),
             None => None
