@@ -41,7 +41,7 @@ impl ToDo {
     }
 
     fn insert(&mut self, key: String) {
-        self.map.insert(key, Status { active: true, status: "Active".to_string()});
+        self.map.insert(key, Status { active: true, status: "On progress".to_string()});
     }
 
     // How to save the map to disk
