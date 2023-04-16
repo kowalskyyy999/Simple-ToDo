@@ -3,6 +3,9 @@ Simple program for create todo list using Rust
 
 ```bash
 
+## build the binary
+cargo build --bin todo
+
 ## Add the task
 ./target/debug/todo add "Task 1"
 
